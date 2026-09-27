@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b14" />
+  <title>NEXUS — AI-команда продвижения</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="aurora aurora-a"></div><div class="aurora aurora-b"></div>
+  <div class="shell">
+    <aside class="rail glass">
+      <button class="brand" aria-label="Nexus"><span></span></button>
+      <nav aria-label="Разделы">
+        <button class="rail-button active" data-view="overview" title="Обзор">⌂</button>
+        <button class="rail-button" data-view="team" title="Команда">◉</button>
+        <button class="rail-button" data-view="content" title="Контент">▦</button>
+        <button class="rail-button" data-view="memory" title="Память">◇</button>
+        <button class="rail-button" data-view="analytics" title="Аналитика">↗</button>
+      </nav>
+      <div class="rail-bottom"><span class="live-dot"></span><small>LOCAL</small></div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div><p class="eyebrow">NEXUS / КОМАНДНЫЙ ЦЕНТР</p><h1 id="viewTitle">Доброе утро, Дмитрий</h1></div>
+        <div class="top-actions"><div class="sync-pill"><span class="live-dot"></span><span id="syncLabel">Синхронизация</span></div><button class="icon-button" id="refreshButton" title="Обновить">↻</button></div>
+      </header>
+
+      <section id="overview" class="view active">
+        <div class="hero-grid">
+          <article class="mission-card glass">
+            <div class="mission-copy">
+              <div class="tag">ЦИКЛ 01 · РАСПАКОВКА</div>
+              <h2>От экспертизы<br>к <span>500 000 ₽</span></h2>
+              <p>Команда собирает фундамент для продвижения курса «ИИ с нуля». Сейчас важнее точность контекста, чем скорость публикаций.</p>
+              <div class="mission-actions"><button class="primary" data-chat="producer">Продолжить с Продюсером <b>→</b></button><button class="secondary" data-open="brief">Открыть бриф</button></div>
+            </div>
+            <div class="orbit-visual" aria-hidden="true"><div class="orbit one"></div><div class="orbit two"></div><div class="core"><span></span></div><i class="sat s1"></i><i class="sat s2"></i><i class="sat s3"></i></div>
+          </article>
+
+          <article class="pulse-card glass">
+            <div class="card-head"><div><p class="eyebrow">ПРОГРЕСС СИСТЕМЫ</p><h3>Фундамент бренда</h3></div><strong id="progressValue">18%</strong></div>
+            <div class="progress-track"><span id="progressBar"></span></div>
+            <div class="milestone done"><i>✓</i><div><b>Команда собрана</b><small>9 профессиональных ролей</small></div></div>
+            <div class="milestone active"><i>2</i><div><b>Распаковка личности</b><small>Есть базовый контекст, нужны детали</small></div></div>
+            <div class="milestone"><i>3</i><div><b>Стратегия и производство</b><small>Откроется после утверждения брифа</small></div></div>
+          </article>
+        </div>
+
+        <div class="section-head"><div><p class="eyebrow">ВАШИ СПЕЦИАЛИСТЫ</p><h2>Команда на связи</h2></div><button class="text-button" data-view-jump="team">Вся команда →</button></div>
+        <div class="team-strip" id="teamStrip"></div>
+
+        <div class="dashboard-grid">
+          <article class="glass panel calendar-panel"><div class="panel-head"><div><p class="eyebrow">КОНТЕНТ</p><h3>Ближайшие публикации</h3></div><button class="icon-button" data-view-jump="content">↗</button></div><div id="miniCalendar"></div></article>
+          <article class="glass panel focus-panel"><div class="panel-head"><div><p class="eyebrow">СЕЙЧАС В ФОКУСЕ</p><h3>Что двигает запуск</h3></div><span class="status warm">3 шага</span></div><ol class="focus-list"><li><span>01</span><div><b>Выбрать платящий сегмент</b><small>Главный блокер стратегии</small></div></li><li><span>02</span><div><b>Подтвердить экономику цели</b><small>Цена, возвраты, число продаж</small></div></li><li><span>03</span><div><b>Передать образцы речи</b><small>Для калибровки авторского голоса</small></div></li></ol></article>
+        </div>
+      </section>
+
+      <section id="team" class="view"><div class="section-head"><div><p class="eyebrow">9 РОЛЕЙ · ОДНА ЦЕЛЬ</p><h2>AI-команда продвижения</h2></div><p class="section-note">Выберите специалиста, чтобы обсудить его часть работы.</p></div><div class="team-grid" id="teamGrid"></div></section>
+
+      <section id="content" class="view"><div class="section-head"><div><p class="eyebrow">ПРОИЗВОДСТВО</p><h2>Контент-календарь</h2></div><div class="legend"><span><i class="reels"></i> Reels 12</span><span><i class="posts"></i> Посты 8</span><span><i class="stories"></i> Stories 30</span></div></div><div class="content-layout"><article class="glass calendar-board"><div class="month-head"><button class="icon-button">‹</button><div><b>Цикл на 30 дней</b><small>откроется после стратегии</small></div><button class="icon-button">›</button></div><div id="fullCalendar"></div></article><article class="glass panel content-side"><p class="eyebrow">КОНТЕНТ-БАНК</p><h3 id="contentCount">0 материалов</h3><p>Темы, сценарии и тексты появятся здесь после утверждения стратегии.</p><div class="empty-orb">✦</div><button class="secondary wide" data-chat="smm">Обсудить план с SMM</button></article></div></section>
+
+      <section id="memory" class="view"><div class="section-head"><div><p class="eyebrow">ЕДИНЫЙ КОНТЕКСТ</p><h2>Память команды</h2></div><p class="section-note">Карточки читаются прямо из файлов проекта.</p></div><div class="memory-layout"><div class="memory-nav" id="memoryNav"></div><article class="glass memory-reader"><div class="reader-head"><div><span class="status" id="memoryStatus">—</span><h3 id="memoryTitle">Бренд-бриф</h3></div><button class="secondary" id="copyPath">Скопировать путь</button></div><div class="markdown" id="memoryContent"></div></article></div></section>
+
+      <section id="analytics" class="view"><div class="section-head"><div><p class="eyebrow">ОБРАТНАЯ СВЯЗЬ СИСТЕМЫ</p><h2>Аналитика и гипотезы</h2></div><span class="status muted">Нет публикаций</span></div><div class="metrics"><article class="glass metric"><span>Охват</span><b>—</b><small>ожидает данных</small></article><article class="glass metric"><span>Квал. лиды</span><b>—</b><small>определение не утверждено</small></article><article class="glass metric"><span>Продажи</span><b>0</b><small>цель: 500 000 ₽</small></article><article class="glass metric"><span>Гипотезы</span><b>0</b><small>для сравнения нужны циклы</small></article></div><article class="glass analytics-empty"><div class="chart-ghost"><i></i><i></i><i></i><i></i><i></i><i></i></div><h3>Аналитика начнётся после публикаций</h3><p>Алекс не будет делать выводы по одному «залетевшему» ролику. Система свяжет контент, обращения и продажи после накопления данных.</p><button class="secondary" data-chat="analyst">Поговорить с Аналитиком</button></article></section>
+    </main>
+  </div>
+
+  <aside class="chat-drawer" id="chatDrawer" aria-hidden="true">
+    <div class="chat-head"><div class="avatar small" id="chatAvatar"></div><div><b id="chatName">Мира</b><small id="chatRole">Продюсер · на связи</small></div><button id="closeChat" class="icon-button">×</button></div>
+    <div class="chat-context"><span>Безопасный режим</span> не меняет файлы. При отправке сообщения Codex обработает его и релевантный контекст проекта в облаке.</div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <form class="chat-form" id="chatForm"><textarea id="chatInput" rows="1" placeholder="Напишите специалисту…"></textarea><button class="send-button" aria-label="Отправить">↑</button></form>
+  </aside>
+  <div class="scrim" id="scrim"></div><div class="toast" id="toast"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
